@@ -30,7 +30,9 @@ get '/get_articles' do
   uri = URI(settings.DATA_URL)
   req = Net::HTTP::Post.new(uri)
   req.body = query.to_json
-  req.content_type = 'application/json'
+  req['Content-Type'] = 'application/json'
+  req['X-Hasura-Role'] = 'anonymous'
+  req['X-Hasura-User-Id'] = 0
   res = Net::HTTP.start(uri.hostname, uri.port) do |http|
     http.request(req)
   end
