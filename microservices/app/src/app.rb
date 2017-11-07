@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'net/http'
 require 'uri'
+require 'json'
 
 configure :development do
   set :bind, '0.0.0.0'
@@ -33,4 +34,6 @@ get '/get_articles' do
   res = Net::HTTP.start(uri.hostname, uri.port) do |http|
     http.request(req)
   end
+  content_type :json
+  res.body.to_json
 end
