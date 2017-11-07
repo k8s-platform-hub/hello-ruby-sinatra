@@ -1,4 +1,4 @@
-description: Blank template for a Hasura project
+description: A simple hasura project built on Sinatra
 keywords: base, getting-started
-name: base
+name: hello-sinatra
 platformVersion: v0.15.3
