@@ -20,6 +20,9 @@ items:
       spec:
         containers:
         - image: hasura/hello-world:latest
+          env:
+          - name: RACK_ENV
+            value: "production"
           imagePullPolicy: IfNotPresent
           name: app
           ports:
