@@ -1,4 +1,4 @@
 description: A simple hasura project built on Sinatra
-keywords: base, getting-started
-name: hello-sinatra
+keywords: ruby, getting-started, sinatra
+name: hello-ruby-sinatra
 platformVersion: v0.15.3

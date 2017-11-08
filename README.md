@@ -2,7 +2,7 @@
 
 This quickstart consists of a basic hasura project using Sinatra ( http://www.sinatrarb.com/ ). Once this project is deployed on to a hasura cluster, you will have the Sinatra app running at https://app.cluster-name.hasura-app.io
 
-This is the right place to start if you are planning to build or want to learn to build a react app with hasura.
+This is the right place to start if you are planning to build or want to learn to build a Sinatra app with hasura.
 
 ## Sections
 
